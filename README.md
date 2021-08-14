@@ -4,21 +4,21 @@
 </br>
 <p align="center">
     <img src="https://img.shields.io/github/languages/top/lloret82
-/weight-is-just-number?style=for-the-badge" alt="Top Language" />
+//Wedding_Organiser?style=for-the-badge" alt="Top Language" />
     <img src="https://img.shields.io/github/repo-size/lloret82
-/weight-is-just-number?style=for-the-badge" alt="Repo Size" />   
+//Wedding_Organiser?style=for-the-badge" alt="Repo Size" />   
     <img src="https://img.shields.io/tokei/lines/github/lloret82
-/weight-is-just-number?style=for-the-badge" alt="Total Lines" />
+//Wedding_Organiser?style=for-the-badge" alt="Total Lines" />
     <img src="https://img.shields.io/github/package-json/dependency-version/lloret82
-/weight-is-just-number/express?style=for-the-badge" alt="Express Version" />
+//Wedding_Organiser/express?style=for-the-badge" alt="Express Version" />
     <img src="https://img.shields.io/github/package-json/dependency-version/lloret82
-/weight-is-just-number/mongoose?style=for-the-badge" alt="Mongoose Version" />
+//Wedding_Organiser/mongoose?style=for-the-badge" alt="Mongoose Version" />
     <img src="https://img.shields.io/github/package-json/dependency-version/lloret82
-/weight-is-just-number/morgan?style=for-the-badge" alt="Morgan Version" />
+//Wedding_Organiser/morgan?style=for-the-badge" alt="Morgan Version" />
     <img src="https://img.shields.io/github/last-commit/lloret82
-/weight-is-just-number?style=for-the-badge" alt="Last Commit" />  
+//Wedding_Organiser?style=for-the-badge" alt="Last Commit" />  
     <img src="https://img.shields.io/github/issues/lloret82
-/weight-is-just-number?style=for-the-badge" alt="Issues" />  
+//Wedding_Organiser?style=for-the-badge" alt="Issues" />  
     <img src="https://img.shields.io/github/followers/lloret82
 ?style=social" alt="Followers" />  
 </p>
