@@ -18,6 +18,8 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "^1.2.9",
+    "aws-amplify": "^4.2.3",
     "react-animated-burgers": "^1.2.8",
     "react-aria-offcanvas": "^1.4.2",
     "styled-components": "^4.4.1"
