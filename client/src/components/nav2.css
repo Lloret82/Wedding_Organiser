@@ -118,4 +118,17 @@ color: rgb(24, 9, 53);
         font-size: 2rem;
     }
 }
+
+.logo {
+    display: flex;
+    max-width: 130px;
+    height: 100%;
+    margin-left: 20px;
+  }
+  
+  .logo img {
+    width: 50%;
+    margin-left: -18px;
+    margin-bottom: 0 auto;
+  }
     

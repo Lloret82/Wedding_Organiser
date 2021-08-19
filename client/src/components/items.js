@@ -5,25 +5,15 @@ const couplelogout=()=>{
     Auth.logout()
 }
 
-export const MenuItems=[
+ const MenuItems=[
     {
         label:'Home',
         url:'/',
         cName:'nav-links'
     },
     {
-        label:'Create Wedding',
-        url:'/createwedding',
-        cName:'nav-links'
-    },
-    {
-        label:'My Wedding',
-        url:'/viewwedding',
-        cName:'nav-links'
-    },
-    {
-        label:'My Guests',
-        url:'/guests',
+        label:'Guest login',
+        url:'/login',
         cName:'nav-links'
     },
     {
@@ -38,7 +28,39 @@ export const MenuItems=[
         cName:'nav-links'
     },
   
-    
-
 
 ]
+
+const CoupleMenuItem =  [
+    {
+        label:'My Guests',
+        url:'/guests',
+        cName:'nav-links'
+    },
+    {
+        label:'Wedding',
+        url:'/viewwedding',
+        cName:'nav-links'
+    },
+    {
+        label:'Create Wedding',
+        url:'/createwedding',
+        cName:'nav-links'
+    }
+  
+]
+
+const GuestMenuItem = [
+    {
+        label:'Wedding',
+        url:'/wedding',
+        cName:'nav-links'
+    },
+  
+]
+
+export  {
+    MenuItems,
+    GuestMenuItem,
+    CoupleMenuItem
+}
