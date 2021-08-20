@@ -32,7 +32,7 @@ import Nav3 from "./components/Nav3"
 
 
 const httpLink = createHttpLink({
-	uri: "/graphql",
+	uri: process.env.REACT_APP_SERVER_URL || "/graphql",
 	// credentials: "same-origin"
 })
 
