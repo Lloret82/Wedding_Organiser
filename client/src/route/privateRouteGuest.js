@@ -11,7 +11,7 @@ const PrivateRouteGuest = ({ component: Component, ...rest }) => {
         if (localStorage.getItem("guest")) {
           return <Component {...props} />
         } else {
-          //   alert("else workign")
+            alert("Check your email, you'll be adviced when someone invites you")
 
           return <Redirect to="/" />
         }

@@ -12,7 +12,7 @@ const PrivateRouteCouple = ({ component: Component, ...rest }) => {
             
           return <Component {...props} />
         } else {
-        //   alert("else workign")
+          alert("You have to create your wedding")
 
           return <Redirect to="/" />
         }
