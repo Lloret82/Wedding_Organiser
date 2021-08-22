@@ -22,12 +22,13 @@ const Login = () => {
       // Trigger Magic link to be sent to user
       let didToken = await magic.auth.loginWithMagicLink({
         email,
-        redirectURI: new URL('/guestlanding', window.location.origin).href,
-        
+        // redirectURI: history.push('/guestlanding'),
+        redirectURI: history.push("/guestlanding")
          // optional redirect back to your app after magic link is clicked
         })
+
       // console.log("email is:   ",email);
-      // f,unction store (email) {localStorage.setItem("guestEmail", email)}
+       localStorage.setItem("guest", email)
       
 
       // Validate didToken with server

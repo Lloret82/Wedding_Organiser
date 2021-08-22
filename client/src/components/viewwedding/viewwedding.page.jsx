@@ -81,7 +81,7 @@ const Callback = (props) => {
 		"the wedding data from wedding query is",
 		data
 	)
-
+		
 	const weddingData = data.weddings.filter((wedding) => {
 		// const weddingID = "61110f69077f5da76492affa"
 		return wedding.wedding_owner == currentUser

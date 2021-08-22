@@ -16,6 +16,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import { useMutation } from "@apollo/client"
 import { ADD_USER } from "../utils/mutations"
 import Auth from "../utils/auth"
+import { useHistory } from "react-router-dom"
 // import { usePartyContext } from "../utils/partycontext"
 
 const useStyles = makeStyles((theme) => ({
@@ -54,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignIn() {
 	const classes = useStyles()
-
+	const history = useHistory()
 	// const { organiser, setOrganiser } = usePartyContext()
 
 	// console.log("first set of organisers=" , organiser)
@@ -83,7 +84,7 @@ export default function SignIn() {
             const {data} = await addUser({
                 variables:{...userFormData}
             })
-            window.location.assign("/home")
+            history.push("/home")
         } catch (error){
             console.log(error)
         }

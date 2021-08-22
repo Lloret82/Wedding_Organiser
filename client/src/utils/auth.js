@@ -42,6 +42,7 @@ class AuthService {
 	login(idToken, newuser) {
 		localStorage.setItem("id_token", idToken)
 		localStorage.setItem("user", JSON.stringify(newuser))
+
 		window.location.assign("/")
 	}
 
@@ -49,7 +50,8 @@ class AuthService {
 		localStorage.removeItem("id_token")
 		// TODO added this line to make sure if the user is logged out the data is removed
 		localStorage.removeItem("user")
-		window.location.assign("/")
+		localStorage.removeItem("guest")
+		// window.location.assign("/")
 	}
 }
 

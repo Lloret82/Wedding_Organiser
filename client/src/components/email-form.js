@@ -15,7 +15,7 @@ const EmailForm = ({ onEmailSubmit, disabled }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         onEmailSubmit(email);
-        localStorage.setItem("guestEmail", email)
+        localStorage.setItem("guest", email)
     };
 
     return (

@@ -1,5 +1,6 @@
 import React from "react"
 import { Parallax, Background } from "react-parallax"
+import { Link } from "react-router-dom"
 
 const styles = {
 	fontFamily: "sans-serif",
@@ -135,7 +136,7 @@ const image5 = require("./newimages/flowers.png").default
                         )}
                     >
                         <div style={{ height: 1000 }}>
-                            <div style={insideStyles}> <a href="/createuser">Sign up now</a></div>
+                            <div style={insideStyles}> <Link to="/createuser">Sign up now</Link></div>
                         </div>
                     </Parallax>
                     {/* <h2>| | |</h2> */}

@@ -17,6 +17,7 @@ import { useMutation } from "@apollo/client"
 import { LOGIN_USER } from "../utils/mutations"
 import Auth from "../utils/auth"
 import { usePartyContext } from "../utils/partycontext"
+import { useHistory } from "react-router-dom"
 
 
 const useStyles = makeStyles((theme) => ({
@@ -55,8 +56,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SignIn() {
 	const classes = useStyles()
-
+	const history = useHistory()
 	const { organiser, setOrganiser } = usePartyContext()
+	
 
 	// console.log("first set of organisers=" , organiser)
 
@@ -91,12 +93,13 @@ export default function SignIn() {
 			console.log("the new user is ", newuser)
 			setOrganiser(newuser)
 			// console.log("the organiser state is ", organiser)
-			// console.log(
+			//  console.log("context user ---- ", user)
 			// 	"this is the data coming back from the login",
 			// 	data
 			// )
 
 			Auth.login(data.login.token, newuser)
+			// history.push("/guest")
 		} catch (e) {
 			console.error(e)
 		}

@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom"
 import { Link, useLocation } from "react-router-dom"
 import { magic } from "../lib/magic"
 import { UserContext } from "../lib/UserContext"
-import rose from "../rose.png"
+
 
 function Nav2() {
   const [clicked, setClick] = useState(false)
@@ -17,13 +17,15 @@ function Nav2() {
   useEffect(() => {
     // if (user) {
     let isUser = localStorage.getItem("user")
-	let isGuest = localStorage.getItem("guestEmail")
+    let guestUser = localStorage.getItem("guest")
     if (isUser) {
+      console.log("USER ", isUser, localStorage.getItem("user"))
       setUserType("couple")
     }
-    if (isGuest) {
-		setUserType("guestEmail")
-	   }
+    else if(guestUser){
+      setUserType("guest")
+    }
+    // }
   })
 
   // Location = () =>useLocation()
@@ -32,14 +34,17 @@ function Nav2() {
   const couplelogout = (e) => {
     e.preventDefault()
     Auth.logout()
+    console.log("LINE NO #666 ", localStorage.getItem("user"))
     setUserType("")
     history.push("/")
   }
+
   const guestlogout = (e) => {
-	localStorage.removeItem("guestEmail")
-	e.preventDefault()
-	Auth.logout()
-	  history.push("/")
+    e.preventDefault()
+    Auth.logout()
+    setUserType("")
+    history.push("/")
+    // localStorage.removeItem("guest")
   }
   
 
@@ -48,20 +53,8 @@ function Nav2() {
   }
 
   return (
-	
-		
-	  
-	  
-	
     <nav className="NavBarItems" role="navigation">
-      {/* <p className="navbar-logo" href="/"> */}
-	  <a href="/" className="logo">
-		   <img className="rose"
-		src={rose}
-		alt="brand"
-		
-	  />
-	  </a>
+      {/* <h1 className="navbar-logo" href="/"> <i className="fas fa-fan"></i></h1> */}
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
@@ -69,7 +62,8 @@ function Nav2() {
         {userType === "" &&
           MenuItems.map((item, index) => {
             return (
-              <li kew={index}>
+              <li onClick={() => setClick(false)} kew={index}>
+                
                 <Link className={item.cName} to={item.url}>
                   {item.label}
                 </Link>
@@ -79,7 +73,7 @@ function Nav2() {
         {userType === "couple" &&
           CoupleMenuItem.map((item, index) => {
             return (
-              <li key={index}>
+              <li onClick={() => setClick(false)} key={index}>
                 <Link className={item.cName} to={item.url}>
                   {item.label}
                 </Link>
@@ -87,22 +81,22 @@ function Nav2() {
             )
           })}
         {userType == "couple" && (
-          <li className="nav-links" onClick={couplelogout}>
+          <li onClick={() => setClick(false)} className="nav-links" onClick={couplelogout}>
             Couple Logout
           </li>
         )}
-		 {userType === "guestEmail" &&
+		 {userType === "guest" &&
           GuestMenuItem.map((item, index) => {
             return (
-              <li key={index}>
+              <li onClick={() => setClick(false)} key={index}>
                 <Link className={item.cName} to={item.url}>
                   {item.label}
                 </Link>
               </li>
             )
           })}
-        {userType == "guestEmail" && (
-          <li className="nav-links" onClick={guestlogout}>
+        {userType == "guest" && (
+          <li onClick={() => setClick(false)} className="nav-links" onClick={guestlogout}>
             Guest Logout
           </li>
         )}
@@ -119,7 +113,6 @@ function Nav2() {
                     </li>  */}
       </ul>
     </nav>
-
   )
 }
 

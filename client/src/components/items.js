@@ -53,7 +53,7 @@ const CoupleMenuItem =  [
 const GuestMenuItem = [
     {
         label:'Wedding',
-        url:'/wedding',
+        url:'/guestlanding',
         cName:'nav-links'
     },
   

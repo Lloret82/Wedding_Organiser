@@ -36,7 +36,7 @@ const NavBar = () => {
     const Logout = () => {
       magic.user.logout().then(() => {
         setUser({ user: null });
-        localStorage.removeItem("guestEmail")
+        localStorage.removeItem("guest")
         history.push("/login");
       })
     };
