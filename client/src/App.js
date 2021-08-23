@@ -86,14 +86,14 @@ function App() {
             <HashRouter>
               
                 <Nav3 />
-                <PublicRoute path="/" exact component={Landing} />
-                <PublicRoute exact path="/home" component={Home} />
-                <PublicRoute  path="/login" component={Login} />
-                <PrivateRouteGuest exact path="/guestlanding" component={GuestLanding} />
-                <PrivateRouteCouple exact path="/guests" component={Guests} />
-                <PrivateRouteCouple exact path="/createwedding" component={CreateWedding} />
-                <PrivateRouteCouple exact path="/viewwedding" component={ViewWedding} />
-                <PublicRoute exact path="/createuser" component={createuser} />
+                <Route path="/" exact component={Landing} />
+                <Route exact path="/home" component={Home} />
+                <Route  path="/login" component={Login} />
+                <Route exact path="/guestlanding" component={GuestLanding} />
+                <Route exact path="/guests" component={Guests} />
+                <Route exact path="/createwedding" component={CreateWedding} />
+                <Route exact path="/viewwedding" component={ViewWedding} />
+                <Route exact path="/createuser" component={createuser} />
             
             </HashRouter>
           </Router>

@@ -10,7 +10,7 @@ const PublicRoute = ({ component: Component, restricted, ...rest }) => {
         if (localStorage.getItem("guest")) {
           return <Redirect to={`/guestlanding`} />
         } else if (localStorage.getItem("user")) {
-          return <Redirect to="/guests" />
+          return <Redirect to="/" />
         } else {
           
           return <Component {...props} />
