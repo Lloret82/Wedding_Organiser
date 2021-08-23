@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom"
 import { Link, useLocation } from "react-router-dom"
 import { magic } from "../lib/magic"
 import { UserContext } from "../lib/UserContext"
+import rose from "../rose.png"
 
 
 function Nav2() {
@@ -53,7 +54,16 @@ function Nav2() {
   }
 
   return (
+    
     <nav className="NavBarItems" role="navigation">
+      <div className="logo">
+          <Link to="/">
+            <img className="rose"
+              src={rose}
+              alt="brand"
+            />
+          </Link>
+          </div>
       {/* <h1 className="navbar-logo" href="/"> <i className="fas fa-fan"></i></h1> */}
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

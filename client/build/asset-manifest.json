@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.86f9706d.chunk.css",
-    "main.js": "./static/js/main.64b720e6.chunk.js",
-    "main.js.map": "./static/js/main.64b720e6.chunk.js.map",
+    "main.js": "./static/js/main.96414e72.chunk.js",
+    "main.js.map": "./static/js/main.96414e72.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.b852d5d9.js",
     "runtime-main.js.map": "./static/js/runtime-main.b852d5d9.js.map",
-    "static/js/2.02a9c1be.chunk.js": "./static/js/2.02a9c1be.chunk.js",
-    "static/js/2.02a9c1be.chunk.js.map": "./static/js/2.02a9c1be.chunk.js.map",
+    "static/js/2.291a7b0e.chunk.js": "./static/js/2.291a7b0e.chunk.js",
+    "static/js/2.291a7b0e.chunk.js.map": "./static/js/2.291a7b0e.chunk.js.map",
     "static/css/3.86bf25ac.chunk.css": "./static/css/3.86bf25ac.chunk.css",
     "static/js/3.fe811e98.chunk.js": "./static/js/3.fe811e98.chunk.js",
     "static/js/3.fe811e98.chunk.js.map": "./static/js/3.fe811e98.chunk.js.map",
@@ -15,7 +15,7 @@
     "index.html": "./index.html",
     "static/css/3.86bf25ac.chunk.css.map": "./static/css/3.86bf25ac.chunk.css.map",
     "static/css/main.86f9706d.chunk.css.map": "./static/css/main.86f9706d.chunk.css.map",
-    "static/js/2.02a9c1be.chunk.js.LICENSE.txt": "./static/js/2.02a9c1be.chunk.js.LICENSE.txt",
+    "static/js/2.291a7b0e.chunk.js.LICENSE.txt": "./static/js/2.291a7b0e.chunk.js.LICENSE.txt",
     "static/media/App.css": "./static/media/ballada-webfont.a7c21ab1.woff",
     "static/media/cake2.png": "./static/media/cake2.39671096.png",
     "static/media/clock.46432272.jpg": "./static/media/clock.46432272.jpg",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b852d5d9.js",
-    "static/js/2.02a9c1be.chunk.js",
+    "static/js/2.291a7b0e.chunk.js",
     "static/css/main.86f9706d.chunk.css",
-    "static/js/main.64b720e6.chunk.js"
+    "static/js/main.96414e72.chunk.js"
   ]
 }

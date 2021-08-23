@@ -13,6 +13,7 @@ handleClick = () =>{
 
 render () {
     return(
+        
         <nav className="NavBarItems collapse navbar-collapse">
             <h1 className="navbar-logo">TBD <i className="fas fa-fan"></i></h1>
             <div className="menu-icon" onClick={this.handleClick}>
