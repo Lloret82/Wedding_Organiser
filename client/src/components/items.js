@@ -32,12 +32,6 @@ const couplelogout=()=>{
 ]
 
 const CoupleMenuItem =  [
-    
-    {
-        label:'Home',
-        url:'/',
-        cName:'nav-links'
-    },
     {
         label:'My Guests',
         url:'/guests',
@@ -57,12 +51,6 @@ const CoupleMenuItem =  [
 ]
 
 const GuestMenuItem = [
-    
-    {
-        label:'Home',
-        url:'/',
-        cName:'nav-links'
-    },
     {
         label:'Wedding',
         url:'/guestlanding',
