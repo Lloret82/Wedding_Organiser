@@ -50,3 +50,15 @@ query getGuests{
 }
 `
 
+export const WISH_QUERY = gql`
+query getWishes{
+	wishes{
+		item
+		website
+		accquired
+		wedding_owner
+		_id
+	}
+}
+`
+

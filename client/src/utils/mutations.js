@@ -53,6 +53,25 @@ export const ADD_GUESTS = gql`
 		}
 	
 `
+
+export const ADD_ITEM = gql`
+mutation addItem(
+	$item: String
+	$website: String
+	$wedding_owner: String
+){
+	addItem(
+		item: $item
+		website: $website
+		wedding_owner: $wedding_owner
+	)
+	{
+		item
+	}
+}
+`
+
+
 export const ADD_WEDDING = gql`
 mutation addWedding ( 
 	$bride_first_name: String
@@ -94,5 +113,16 @@ mutation update_menu(
 		}
 	}
 
+`
+
+export const UPDATE_ITEM= gql`
+mutation update_item(
+	$_id:ID, $accquired:Boolean)
+	{
+		update_menu(_id:$_id, accquired:$accquired)
+		{
+			item
+		}
+	}
 
 `
