@@ -51,7 +51,7 @@ class AuthService {
 		// TODO added this line to make sure if the user is logged out the data is removed
 		localStorage.removeItem("user")
 		localStorage.removeItem("guest")
-		// window.location.assign("/")
+		window.location.assign("/")
 	}
 }
 

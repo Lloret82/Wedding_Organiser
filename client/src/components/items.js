@@ -56,6 +56,11 @@ const GuestMenuItem = [
         url:'/guestlanding',
         cName:'nav-links'
     },
+    {
+        label:'Wishlist',
+        url:'/guestwishlist',
+        cName:'nav-links'
+    },
   
 ]
 

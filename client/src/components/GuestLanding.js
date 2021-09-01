@@ -205,6 +205,8 @@ function GuestLanding() {
                 deadline={weddingResult[0].date}
                 />
             }
+                        <a href="/#guestwishlist"><button>COUPLE WISH LIST</button></a>
+
               </div>
             </div>
           </div>

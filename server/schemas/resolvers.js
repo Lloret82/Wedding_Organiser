@@ -1,11 +1,12 @@
-const { User, Wedding, Guests } = require("../models")
+const { User, Wedding, Guests, Wish } = require("../models")
 const {
 	AuthenticationError,
 } = require("apollo-server-express")
 const { signToken } = require("../utils/auth")
 const { findOne } = require("../models/User")
 
-// TODO authentication error requires apollo-server-express
+
+
 
 const resolvers = {
 	Query: {
@@ -37,6 +38,13 @@ const resolvers = {
 			console.log("guest list is", guestList)
 			return guestList
 		},
+
+		wishes: async (parent,args) => {
+			const wishList = await Wish.find({})
+			console.log("the wishlist is ", wishList)
+			return wishList
+		}
+
 	},
 
 	Mutation: {
@@ -80,6 +88,11 @@ const resolvers = {
             
         },
 
+		addItem: async(parent,args) =>{
+			const wishlist = await Wish.create(args)
+			return wishlist
+		},
+
 		update_rsvp: async (parent, {email, rsvp})=>{
 			const updateGuest= Guests.findOneAndUpdate({email:email},{rsvp:rsvp});
 			
@@ -90,6 +103,11 @@ const resolvers = {
 		update_menu: async (parent, {email,menu})=>{
 			const hungryGuest= Guests.findOneAndUpdate({email:email},{menu:menu});
 			return hungryGuest
+		},
+
+		update_item: async (parent, {_id,accquired})=>{
+			const wishItem= Wish.findOneAndUpdate({_id:_id},{accquired:accquired});
+			return wishItem
 		}
 	},
 }

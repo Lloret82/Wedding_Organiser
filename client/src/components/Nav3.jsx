@@ -29,8 +29,8 @@ function Nav2() {
     // }
   })
 
-  // Location = () =>useLocation()
-  // History =()=> useHistory()
+  Location = () =>useLocation()
+  History =()=> useHistory()
 
   const couplelogout = (e) => {
     e.preventDefault()
@@ -45,7 +45,7 @@ function Nav2() {
     Auth.logout()
     setUserType("")
     history.push("/")
-    // localStorage.removeItem("guest")
+    localStorage.removeItem("guest")
   }
   
 
@@ -56,14 +56,14 @@ function Nav2() {
   return (
     
     <nav className="NavBarItems" role="navigation">
-      <div className="logo">
+      
           <Link to="/">
             <img className="rose"
               src={rose}
               alt="brand"
             />
           </Link>
-          </div>
+         
       {/* <h1 className="navbar-logo" href="/"> <i className="fas fa-fan"></i></h1> */}
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
@@ -110,6 +110,7 @@ function Nav2() {
             Guest Logout
           </li>
         )}
+        
         {/* <li className="nav-links" onClick={couplelogout}>
 						Logout
 					</li>

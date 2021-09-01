@@ -38,6 +38,14 @@ const typeDefs = gql`
 		wedding_owner: String
 	}
 
+	type Wish {
+		item:String
+		website: String
+		accquired: Boolean
+		wedding_owner:String
+		_id:ID
+	}
+
 	type Guest {
 		name: String
 		email: String!
@@ -63,6 +71,8 @@ const typeDefs = gql`
 		weddings: [Wedding]
 		guest: Guest
 		users: [User]
+		wish:Wish
+		wishes: [Wish]
 		guests: [Guest]
 	}
 
@@ -77,6 +87,8 @@ const typeDefs = gql`
 		): Auth
 		update_rsvp(rsvp:String, email:String) : Guest
 		update_menu(menu:String, email:String) :Guest
+		addItem(item:String, website:String, wedding_owner:String, accquired:Boolean):Wish
+		update_item(_id:ID, accquired:Boolean):Wish
 
 		# removeUSer(userId: ID!): User
 		# TODO we can add remove user later not needed for minimum product ?
