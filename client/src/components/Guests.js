@@ -16,9 +16,9 @@ import { ADD_GUESTS } from "../utils/mutations"
 import { makeStyles } from "@material-ui/core/styles"
 import { useQuery, useMutation } from "@apollo/client"
 
-const service = process.env.REACT_APP_SERVICE_ID
-const template = process.env.REACT_APP_TEMPLATE_ID
-const user = process.env.REACT_APP_USER_ID
+const service = "service_rw70k2d"
+const template = "template_apy6h9r"
+const user = "user_etEj26siyXh7iVOifHYMb"
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -130,9 +130,17 @@ function Guests() {
 		const email = values[index].email
 		const name = values[index].name
 
+		const groom = correctWedding[0].groom_first_name
+		const bride = correctWedding[0].bride_first_name
+		const weddingdate = correctWedding[0].date
+		const location = correctWedding[0].venue
 		const params = {
 			name: name,
 			email: email,
+			groom: groom,
+			bride: bride,
+			date: weddingdate,
+			venue: location,
 		}
 
 		emailjs
@@ -165,9 +173,7 @@ function Guests() {
 	return (
 		<Container>
 			<h1> Your Guest List</h1>
-			<p> my test user id is</p>
-			<p>the organiser is {currentUser} </p>
-			<p> the user id is {currentID}</p>
+			
 
 			<form
 				className={classes.root}
