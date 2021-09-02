@@ -1,70 +1,70 @@
-# the_big_day
+# Getting Started with Create React App
 
-</br>
-<p align="center">
-    <img src="https://img.shields.io/github/languages/top/lloret82/Wedding_Organiser?style=for-the-badge" alt="Top Language" />
-    <img src="https://img.shields.io/github/repo-size/lloret82/Wedding_Organiser?style=for-the-badge" alt="Repo Size" />       <img src="https://img.shields.io/tokei/lines/github/lloret82/Wedding_Organiser?style=for-the-badge" alt="Total Lines" />    <img src="https://img.shields.io/github/package-json/dependency-version/lloret82/Wedding_Organiser/express?style=for-the-badge" alt="Express Version" />    <img src="https://img.shields.io/github/package-json/dependency-version/lloret82/Wedding_Organiser/mongoose?style=for-the-badge" alt="Mongoose Version" />    <img src="https://img.shields.io/github/package-json/dependency-version/lloret82/Wedding_Organiser/morgan?style=for-the-badge" alt="Morgan Version" />    <img src="https://img.shields.io/github/last-commit/lloret82/Wedding_Organiser?style=for-the-badge" alt="Last Commit" />      <img src="https://img.shields.io/github/issues/lloret82/Wedding_Organiser?style=for-the-badge" alt="Issues" />  
-    <img src="https://img.shields.io/github/followers/lloret82/Wedding_Organiser?style=social" alt="Followers" />  
-</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Description
+## Available Scripts
 
-The Big day is an app that takes away the stress from planning a wedding and inviting friends and family. The user will sign up in and login in the couple login. After that, they can create their wedding and view it after the form has been filled. Once they’re done, they can add their guests where a magic link will be sent to each individual. Once the email has been sent, the guest will be able to login and view the wedding details such as, who will be getting married, the location, and have the option to rsvp and choose a menu option
+In the project directory, you can run:
 
-## Table of Contents
+### `npm start`
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Credits](#credits)
-- [License](#license)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Installation
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-1. Clone repository.
-2. npm install
-3. npm run develop
+### `npm test`
 
-Running seeders/seed.js is optional to have a prepopulated database.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<p align="center">
-    <a href=" your heroku link"  alt="Live Site" /></a>
-</p>
+### `npm run build`
 
-## Usage
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Screeshots
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. Homepage
-   <img width="1201" alt="Screenshot 2021-08-14 at 15 04 29" src="https://user-images.githubusercontent.com/76731133/129445759-a9467a17-6d5e-43b1-b2bd-d8a45dd14e59.png">
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Deployed link:
+### `npm run eject`
 
-https://thebigday.herokuapp.com/
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Credits
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Authors
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- Github: [Omnikorn](https://github.com/Omnikorn)
-- Github: [Danaalami-cloud](https://www.github.com/Danaalami-cloud)
-- Github: [Lloret82](https://github.com/Lloret82)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### Built With
+## Learn More
 
-</br>
-<p align="center">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/-HTML-orange?style=for-the-badge"  alt="HMTL" /></a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/-CSS-blue?style=for-the-badge" alt="CSS" /></a>
-    <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/-Javascript-yellow?style=for-the-badge" alt="Javascript" /></a>
-    <a href="https://getbootstrap.com/"><img src="https://img.shields.io/badge/-Bootstrap-blueviolet?style=for-the-badge" alt="Bootstrap" /></a>
-    <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/-Node-orange?style=for-the-badge" alt="Node" /></a>
-    <a href="https://www.npmjs.com/package/express"><img src="https://img.shields.io/badge/-Express-blue?style=for-the-badge" alt="Express" /></a>
-    <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/-MongoDB-blue?style=for-the-badge" alt="MongoDB" /></a>
-</p>
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## License
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-</br>
+### Code Splitting
 
-![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
