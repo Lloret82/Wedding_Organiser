@@ -129,7 +129,10 @@ function Guests() {
 		const values = [...inputFields]
 		const email = values[index].email
 		const name = values[index].name
-
+		const correctWedding = searchWedding.data.weddings.filter(
+            (wedding) => {
+                return wedding.wedding_owner == currentUser
+            })
 		const groom = correctWedding[0].groom_first_name
 		const bride = correctWedding[0].bride_first_name
 		const weddingdate = correctWedding[0].date
