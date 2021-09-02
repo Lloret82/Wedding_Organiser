@@ -4,6 +4,9 @@ import { magic } from '../lib/magic';
 import { UserContext } from '../lib/UserContext';
 import EmailForm from './email-form';
 import SocialLogins from './social-logins';
+import { makeStyles } from '@material-ui/core/styles';
+import './login.css'
+
 
 const Login = () => {
   const history = useHistory();
@@ -58,15 +61,19 @@ const Login = () => {
       redirectURI: new URL('/callback', window.location.origin).href, // required redirect to finish social login
     });
   }
+  
 
   return (
     <>
+    <container className="bg">
       <div className='login'>
         <EmailForm disabled={disabled} onEmailSubmit={handleLoginWithEmail} />
         
       </div>
-      <style>{`
+      {/* <style>{`
+        
         .login {
+          background-image: url();
           max-width: 20rem;
           margin: 40px auto 0;
           padding: 1rem;
@@ -76,7 +83,8 @@ const Login = () => {
           box-shadow: 0px 0px 6px 6px #f7f7f7;
           box-sizing: border-box;
         }
-      `}</style>
+      `}</style> */}
+      </container>
     </>
   );
 };

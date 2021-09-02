@@ -10,6 +10,7 @@ import {
 import { UPDATE_ITEM } from "../../utils/mutations"
 import { makeStyles } from "@material-ui/core/styles"
 import { useQuery, useMutation } from "@apollo/client"
+import './wish.css'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -142,6 +143,7 @@ const filteredWishList = data.wishes.filter((wish) => {
 	
 
 	return (
+		<div className="bg2">
 		<Container>
 			<h1>This is the happy couple's Wish list</h1>
 			<form className={classes.root}>
@@ -181,6 +183,7 @@ const filteredWishList = data.wishes.filter((wish) => {
 				))}
 			</form>
 		</Container>
+		</div>
 	)
 }
 

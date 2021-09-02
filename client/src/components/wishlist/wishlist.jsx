@@ -16,6 +16,7 @@ import {
 import { ADD_GUESTS, ADD_ITEM } from "../../utils/mutations"
 import { makeStyles } from "@material-ui/core/styles"
 import { useQuery, useMutation } from "@apollo/client"
+import './wish.css'
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -114,6 +115,7 @@ function Couplewishlist() {
 	console.log("the filtered wish list is", filteredWishList)
 
 	return (
+		<div className="bg2">
 		<Container>
 			<h1>This is your Wihs list</h1>
 			<form className={classes.root}>
@@ -218,6 +220,7 @@ function Couplewishlist() {
 				</Button>
 			</form>
 		</Container>
+		</div>
 	)
 }
 
