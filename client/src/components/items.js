@@ -46,6 +46,11 @@ const CoupleMenuItem =  [
         label:'Create Wedding',
         url:'/createwedding',
         cName:'nav-links'
+    },
+    {
+        label:'My wish list',
+        url:'/couplewishlist',
+        cName:'nav-links'
     }
   
 ]
@@ -54,11 +59,6 @@ const GuestMenuItem = [
     {
         label:'Wedding',
         url:'/guestlanding',
-        cName:'nav-links'
-    },
-    {
-        label:'Wishlist',
-        url:'/guestwishlist',
         cName:'nav-links'
     },
   

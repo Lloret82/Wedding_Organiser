@@ -37,8 +37,8 @@ import Couplewishlist from "./components/wishlist/wishlist"
 import GuestWish from "./components/wishlist/guestwish"
 
 const httpLink = createHttpLink({
-  uri:"/graphql",
-  credentials: "same-origin"
+  uri: process.env.REACT_APP_SERVER_URL || "/graphql",
+  // credentials: "same-origin"
 })
 
 const authLink = setContext((_, { headers }) => {
@@ -95,10 +95,9 @@ function App() {
                 <PrivateRouteCouple exact path="/guests" component={Guests} />
                 <PrivateRouteCouple exact path="/createwedding" component={CreateWedding} />
                 <PrivateRouteCouple exact path="/viewwedding" component={ViewWedding} />
+                <PublicRoute exact path="/createuser" component={createuser} />
                 <PrivateRouteCouple exact path="/couplewishlist" component={Couplewishlist}/>
                 <PrivateRouteGuest exact path="/guestwishlist" component={GuestWish}/>
-                <PublicRoute exact path="/createuser" component={createuser} />
-            
             </HashRouter>
           </Router>
         </UserContext.Provider>

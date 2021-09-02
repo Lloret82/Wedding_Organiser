@@ -32,8 +32,8 @@ function GuestLanding() {
     if (data) {
         setloader(true)
       const correctGuestResult = data.guests.filter((guest) => {
-        // return guest.email === guestEmail
-        return guest
+        return guest.email === guestEmail
+        // return guest
       })
       
     
@@ -205,8 +205,7 @@ function GuestLanding() {
                 deadline={weddingResult[0].date}
                 />
             }
-                        <a href="/#guestwishlist"><button>COUPLE WISH LIST</button></a>
-
+            <a href="/#guestwishlist"><button>COUPLE WISH LIST</button></a>
               </div>
             </div>
           </div>
